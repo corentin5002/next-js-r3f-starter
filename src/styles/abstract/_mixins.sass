@@ -1,0 +1,12 @@
+@use 'variables' as *
+
+// Sizes :
+// Small Mobile  - 	502px	-   sMobile
+// Mobile       -   767px   -   mobile
+// Tablet       -   1024px  -   tablet
+// Large        -   1440px  -   large
+// Monitor      -   1920px  -   monitor
+
+// Transforms a pixel value to a rem one using 16px for 1 rem as a reference
+@function rem-calc($pixels-value)
+	@return #{ $pixels-value / 16 }rem
